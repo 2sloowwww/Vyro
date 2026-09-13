@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Logo } from "./logo";
 
 const links = [
-  { href: "#features", label: "Fabric" },
-  { href: "#product", label: "Shop" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#features", label: "Fabric" },
+  { href: "/#product", label: "Shop" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Navbar() {
@@ -17,11 +18,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-6">
-        <a
-          href="#top"
-          className="font-heading text-2xl font-black tracking-tight uppercase"
-        >
-          Staple
+        <a href="/#top" className="flex items-center" aria-label="VYRO home">
+          <Logo className="h-11 w-11" />
         </a>
 
         <nav className="hidden items-center gap-9 md:flex">
@@ -39,7 +37,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button
-            render={<a href="#pricing" />}
+            render={<a href="/#pricing" />}
             nativeButton={false}
             className="rounded-none bg-primary px-6 text-sm font-bold uppercase tracking-wide text-primary-foreground hover:bg-primary/85"
           >
@@ -71,7 +69,7 @@ export function Navbar() {
             </a>
           ))}
           <Button
-            render={<a href="#pricing" />}
+            render={<a href="/#pricing" />}
             nativeButton={false}
             className="mt-2 w-full rounded-none bg-primary text-sm font-bold uppercase tracking-wide text-primary-foreground hover:bg-primary/85"
           >

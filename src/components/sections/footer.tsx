@@ -1,4 +1,5 @@
 import { Mail, MessageCircle, Rss } from "lucide-react";
+import { Logo } from "./logo";
 
 const columns = [
   {
@@ -21,11 +22,8 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <a
-              href="#top"
-              className="font-heading text-xl font-black uppercase tracking-tight"
-            >
-              Staple
+            <a href="#top" className="inline-flex" aria-label="VYRO home">
+              <Logo className="h-14 w-14" />
             </a>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               The plain black t-shirt, made properly — heavyweight cotton,
@@ -80,10 +78,10 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Staple. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground">
+            <a href="/privacy" data-cursor-hover className="hover:text-foreground">
               Privacy
             </a>
-            <a href="#" className="hover:text-foreground">
+            <a href="/terms" data-cursor-hover className="hover:text-foreground">
               Terms
             </a>
           </div>
