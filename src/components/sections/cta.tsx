@@ -18,7 +18,7 @@ export function CTA() {
           size="lg"
           className="mt-8 rounded-none bg-accent px-8 text-base font-bold uppercase tracking-wide text-accent-foreground hover:bg-accent/90"
         >
-          Shop Staple now
+          Shop VYRO now
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </Button>
       </div>
