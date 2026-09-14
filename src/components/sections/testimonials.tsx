@@ -30,7 +30,7 @@ export function Testimonials() {
           Worn daily, not just bought
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Real notes from the Staple community — unedited, unpaid, unbothered.
+          Real notes from the VYRO community — unedited, unpaid, unbothered.
         </p>
       </div>
 
