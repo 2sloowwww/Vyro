@@ -8,7 +8,7 @@ const plans = [
     price: "$32",
     description: "Try the fit, pick your shade.",
     features: [
-      "220gsm combed cotton",
+      "240gsm combed cotton",
       "Garment-dyed color",
       "Free size exchange",
     ],
