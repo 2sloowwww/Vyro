@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalLayout } from "@/components/sections/legal-layout";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Staple",
-  description: "The terms that govern your use of the Staple website and purchases.",
+  title: "Terms of Service — VYRO",
+  description: "The terms that govern your use of the VYRO website and purchases.",
 };
 
 export default function TermsPage() {
@@ -12,7 +12,7 @@ export default function TermsPage() {
       <section>
         <p>
           These Terms of Service (&quot;Terms&quot;) govern your access to
-          and use of the Staple website and any purchases made through it.
+          and use of the VYRO website and any purchases made through it.
           By using our site, you agree to these Terms.
         </p>
       </section>
@@ -71,7 +71,7 @@ export default function TermsPage() {
           <li>
             If 10 business days have passed since your refund was approved
             and you haven&apos;t seen it posted, contact your bank first,
-            then reach out to us at hello@staple.example.
+            then reach out to us at hello@vyro.example.
           </li>
         </ul>
       </section>
@@ -111,7 +111,7 @@ export default function TermsPage() {
         <h2>Governing law</h2>
         <p>
           These Terms are governed by the laws of the jurisdiction in which
-          Staple is registered, without regard to its conflict of law
+          VYRO is registered, without regard to its conflict of law
           principles.
         </p>
       </section>
@@ -128,7 +128,7 @@ export default function TermsPage() {
       <section>
         <h2>Contact us</h2>
         <p>
-          Questions about these Terms? Reach us at hello@staple.example.
+          Questions about these Terms? Reach us at hello@vyro.example.
         </p>
       </section>
     </LegalLayout>
