@@ -1,7 +1,7 @@
 import { Reveal, RevealGroup } from "./reveal";
 
 const stats = [
-  { value: "220gsm", label: "Heavyweight cotton" },
+  { value: "240gsm", label: "Heavyweight cotton" },
   { value: "12,400+", label: "Tees shipped" },
   { value: "4.9/5", label: "Average rating" },
   { value: "50 wash", label: "Color-fade tested" },
