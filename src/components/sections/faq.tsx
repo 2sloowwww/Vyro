@@ -36,7 +36,7 @@ export function FAQ() {
           Questions? Answered.
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Still curious about something? Reach out at hello@VYRO.example.
+          Still curious about something? Reach out at hello@vyro.example.
         </p>
       </div>
 
