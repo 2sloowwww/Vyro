@@ -4,7 +4,7 @@ export function TshirtIllustration({ className }: { className?: string }) {
       viewBox="0 0 320 360"
       className={className}
       role="img"
-      aria-label="Illustration of the Staple plain black t-shirt"
+      aria-label="Illustration of the VYRO plain black t-shirt"
     >
       <defs>
         <linearGradient id="tshirtBody" x1="0.1" y1="0" x2="0.9" y2="1">
