@@ -4,7 +4,7 @@ import { Logo } from "./logo";
 const columns = [
   {
     title: "Product",
-    links: ["The Staple Tee", "Shades", "Size guide", "Care instructions"],
+    links: ["The VYRO Tee", "Shades", "Size guide", "Care instructions"],
   },
   {
     title: "Company",
@@ -39,14 +39,14 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                aria-label="Staple community chat"
+                aria-label="VYRO community chat"
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
                 href="#"
-                aria-label="Staple blog"
+                aria-label="VYRO blog"
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Rss className="h-4 w-4" aria-hidden="true" />
