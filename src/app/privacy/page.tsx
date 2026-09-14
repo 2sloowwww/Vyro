@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalLayout } from "@/components/sections/legal-layout";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Staple",
-  description: "How Staple collects, uses, and protects your information.",
+  title: "Privacy Policy — VYRO",
+  description: "How VYRO collects, uses, and protects your information.",
 };
 
 export default function PrivacyPage() {
@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <LegalLayout title="Privacy Policy" updated="January 1, 2026">
       <section>
         <p>
-          This Privacy Policy describes how Staple (&quot;we&quot;,
+          This Privacy Policy describes how VYRO (&quot;we&quot;,
           &quot;us&quot;, or &quot;our&quot;) collects, uses, and shares
           information when you visit or make a purchase from our website.
         </p>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
           Depending on where you live, you may have the right to access,
           correct, delete, or export the personal information we hold about
           you. To exercise these rights, contact us at
-          hello@staple.example.
+          hello@vyro.example.
         </p>
       </section>
 
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
       <section>
         <h2>Contact us</h2>
         <p>
-          Questions about this policy? Reach us at hello@staple.example.
+          Questions about this policy? Reach us at hello@vyro.example.
         </p>
       </section>
     </LegalLayout>
