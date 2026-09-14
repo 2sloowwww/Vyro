@@ -13,7 +13,7 @@ const colorways = [
 ];
 
 const specs = [
-  "220gsm combed cotton, garment-dyed jet black",
+  "240gsm combed cotton, garment-dyed jet black",
   "Reinforced crew collar that keeps its shape",
   "Tapered fit, true to size, pre-shrunk",
   "Machine washable, holds color wash after wash",
@@ -28,7 +28,7 @@ export function ProductShowcase() {
       <RevealGroup className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
         <Reveal className="order-2 md:order-1">
           <Badge className="rounded-none bg-primary px-3 py-1 text-primary-foreground" variant="secondary">
-            The Staple Tee
+            The VYRO Tee
           </Badge>
           <h2 className="mt-4 text-3xl font-black uppercase sm:text-4xl">
             One t-shirt. Four shades.
