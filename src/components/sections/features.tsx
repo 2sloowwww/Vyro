@@ -36,7 +36,7 @@ export function Features() {
           Built from the fabric up
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Staple isn&apos;t just a t-shirt — it&apos;s the one you reach for
+          VYRO isn&apos;t just a t-shirt — it&apos;s the one you reach for
           first, wash after wash, year after year.
         </p>
       </div>
