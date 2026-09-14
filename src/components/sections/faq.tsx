@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Will the black fade after a few washes?",
     answer:
-      "No — because Staple is garment-dyed after the tee is sewn, the color runs deeper into the fibers than a standard pre-dyed shirt. Wash cold and it'll hold up for 50+ washes.",
+      "No — because VYRO is garment-dyed after the tee is sewn, the color runs deeper into the fibers than a standard pre-dyed shirt. Wash cold and it'll hold up for 50+ washes.",
   },
   {
     question: "How does the fit run?",
@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "What's the fabric weight?",
     answer:
-      "220gsm combed cotton — noticeably heavier than a typical fast-fashion tee, so it drapes better and doesn't go sheer.",
+      "240gsm combed cotton — noticeably heavier than a typical fast-fashion tee, so it drapes better and doesn't go sheer.",
   },
   {
     question: "What's the return policy?",
@@ -36,7 +36,7 @@ export function FAQ() {
           Questions? Answered.
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Still curious about something? Reach out at hello@staple.example.
+          Still curious about something? Reach out at hello@VYRO.example.
         </p>
       </div>
 
