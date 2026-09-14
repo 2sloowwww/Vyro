@@ -4,7 +4,7 @@ import { Reveal, RevealGroup } from "./reveal";
 const features = [
   {
     icon: Feather,
-    title: "220gsm heavyweight cotton",
+    title: "240gsm heavyweight cotton",
     description:
       "Substantial enough to hold its shape, soft enough to wear every day — no sheerness, no sagging.",
   },
