@@ -173,7 +173,7 @@ export function TshirtIllustration({ className }: { className?: string }) {
         letterSpacing="4"
         opacity="0.85"
       >
-        STAPLE
+        VYRO
       </text>
     </svg>
   );
