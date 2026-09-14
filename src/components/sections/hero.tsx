@@ -21,7 +21,7 @@ export function Hero() {
           </h1>
 
           <p className="max-w-md text-lg leading-relaxed text-muted-foreground">
-            Staple is cut from heavyweight combed cotton and garment-dyed for
+            VYRO is cut from heavyweight combed cotton and garment-dyed for
             a deep, even black that doesn&apos;t fade wash after wash.
           </p>
 
