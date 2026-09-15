@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Staple — The plain black t-shirt, perfected",
+  title: "VYRO — The plain tee, perfected",
   description:
-    "Staple is a plain black t-shirt cut from heavyweight combed cotton, garment-dyed for a deep, even black that holds up wash after wash.",
+    "VYRO is a plain tee cut from heavyweight combed cotton, garment-dyed in Black and Lavender for color that holds up wash after wash.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

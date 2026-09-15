@@ -44,7 +44,7 @@ export function CustomCursor() {
   return (
     <motion.div
       aria-hidden="true"
-      className="pointer-events-none fixed left-0 top-0 z-[100] flex items-center justify-center rounded-full bg-primary mix-blend-difference"
+      className="pointer-events-none fixed left-0 top-0 z-[100] flex items-center justify-center rounded-full bg-white mix-blend-difference"
       style={{ x: springX, y: springY, translateX: "-50%", translateY: "-50%" }}
       animate={{
         width: hovering ? 64 : 10,

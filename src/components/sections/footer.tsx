@@ -26,13 +26,12 @@ export function Footer() {
               <Logo className="h-14 w-14" />
             </a>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              The plain black t-shirt, made properly — heavyweight cotton,
-              garment-dyed, built to outlast the wash.
+              The plain tee, made properly.
             </p>
             <div className="mt-5 flex gap-3">
               <a
                 href="#"
-                aria-label="Email Staple"
+                aria-label="Email VYRO"
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />

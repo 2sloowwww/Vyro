@@ -90,7 +90,7 @@ export default function TermsPage() {
         <h2>Intellectual property</h2>
         <p>
           All content on this site, including text, graphics, logos, and
-          images, is the property of Staple or its licensors and is
+          images, is the property of VYRO or its licensors and is
           protected by applicable intellectual property laws. You may not
           reproduce, distribute, or create derivative works without our
           prior written consent.
@@ -100,7 +100,7 @@ export default function TermsPage() {
       <section>
         <h2>Limitation of liability</h2>
         <p>
-          To the fullest extent permitted by law, Staple shall not be liable
+          To the fullest extent permitted by law, VYRO shall not be liable
           for any indirect, incidental, special, or consequential damages
           arising out of your use of, or inability to use, the site or our
           products.

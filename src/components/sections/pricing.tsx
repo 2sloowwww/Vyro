@@ -6,7 +6,6 @@ const plans = [
   {
     name: "1 Tee",
     price: "$32",
-    description: "Try the fit, pick your shade.",
     features: [
       "240gsm combed cotton",
       "Garment-dyed color",
@@ -17,24 +16,20 @@ const plans = [
   {
     name: "3-Pack",
     price: "$84",
-    description: "Our best-selling everyday bundle.",
     features: [
       "Everything in 1 Tee",
       "Mix and match shades",
       "Save $12 vs. single tees",
-      "Free size exchange",
     ],
     featured: true,
   },
   {
     name: "5-Pack",
     price: "$130",
-    description: "Stock the whole rotation.",
     features: [
       "Everything in 3-Pack",
       "Save $30 vs. single tees",
       "Priority restock access",
-      "Free size exchange",
     ],
     featured: false,
   },
@@ -43,14 +38,9 @@ const plans = [
 export function Pricing() {
   return (
     <section id="pricing" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-      <div className="max-w-2xl">
-        <h2 className="text-3xl font-black uppercase sm:text-4xl">
-          Simple pricing, no subscriptions
-        </h2>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Pay once. Free shipping on every order, 60-day returns, always.
-        </p>
-      </div>
+      <h2 className="max-w-2xl text-3xl font-black uppercase sm:text-4xl">
+        Simple pricing, no subscriptions
+      </h2>
 
       <RevealGroup className="mt-12 grid gap-px overflow-hidden border border-border bg-border md:grid-cols-3">
         {plans.map((plan) => (
@@ -69,13 +59,6 @@ export function Pricing() {
             <h3 className="font-heading text-xl font-bold uppercase">
               {plan.name}
             </h3>
-            <p
-              className={`mt-1 text-sm ${
-                plan.featured ? "text-primary-foreground/70" : "text-muted-foreground"
-              }`}
-            >
-              {plan.description}
-            </p>
             <p className="mt-6 font-heading text-4xl font-black">
               {plan.price}
             </p>

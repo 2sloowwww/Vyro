@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "Will the black fade after a few washes?",
+    question: "Will the color fade after a few washes?",
     answer:
       "No — because VYRO is garment-dyed after the tee is sewn, the color runs deeper into the fibers than a standard pre-dyed shirt. Wash cold and it'll hold up for 50+ washes.",
   },
