@@ -1,11 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { motion, useMotionValue, useSpring, useReducedMotion } from "framer-motion";
+
+function subscribeNoop() {
+  return () => {};
+}
+
+function getFinePointerSnapshot() {
+  return window.matchMedia("(pointer: fine)").matches;
+}
+
+function getFinePointerServerSnapshot() {
+  return false;
+}
 
 export function CustomCursor() {
   const prefersReducedMotion = useReducedMotion();
-  const [enabled, setEnabled] = useState(false);
+  const finePointer = useSyncExternalStore(
+    subscribeNoop,
+    getFinePointerSnapshot,
+    getFinePointerServerSnapshot
+  );
+  const enabled = finePointer && !prefersReducedMotion;
   const [hovering, setHovering] = useState(false);
   const [label, setLabel] = useState("");
 
@@ -15,11 +32,8 @@ export function CustomCursor() {
   const springY = useSpring(y, { stiffness: 400, damping: 35, mass: 0.5 });
 
   useEffect(() => {
-    if (prefersReducedMotion) return;
-    const fine = window.matchMedia("(pointer: fine)").matches;
-    if (!fine) return;
+    if (!enabled) return;
 
-    setEnabled(true);
     document.body.classList.add("cursor-none-desktop");
 
     function handleMove(e: PointerEvent) {
@@ -37,7 +51,7 @@ export function CustomCursor() {
       window.removeEventListener("pointermove", handleMove);
       document.body.classList.remove("cursor-none-desktop");
     };
-  }, [prefersReducedMotion, x, y]);
+  }, [enabled, x, y]);
 
   if (!enabled) return null;
 

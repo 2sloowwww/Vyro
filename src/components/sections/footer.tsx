@@ -1,18 +1,44 @@
-import { Mail, MessageCircle, Rss } from "lucide-react";
+import Link from "next/link";
+import { Mail, Phone } from "lucide-react";
+import { whatsappLink } from "@/lib/whatsapp";
+import { InstagramIcon } from "./instagram-icon";
 import { Logo } from "./logo";
+import { WhatsAppIcon } from "./whatsapp-icon";
 
 const columns = [
   {
     title: "Product",
-    links: ["The VYRO Tee", "Shades", "Size guide", "Care instructions"],
+    links: [
+      { label: "The VYRO Tee", href: "/#product" },
+      { label: "Fabric", href: "/#features" },
+      { label: "Size guide", href: "/#faq" },
+      { label: "Care instructions", href: "/#faq" },
+    ],
   },
   {
-    title: "Company",
-    links: ["About", "Sustainability", "Careers", "Press"],
+    title: "Brand",
+    links: [
+      { label: "Sustainability", href: "/#features" },
+      { label: "Contact", href: "mailto:hello@vyrostore.in" },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/vyrostore.in/",
+        external: true,
+      },
+    ],
   },
   {
     title: "Support",
-    links: ["Help center", "Shipping", "Returns", "Warranty"],
+    links: [
+      { label: "FAQ", href: "/#faq" },
+      { label: "Shipping", href: "/#faq" },
+      { label: "Returns", href: "/#faq" },
+      {
+        label: "WhatsApp us",
+        href: whatsappLink("Hi VYRO, I have a question."),
+        external: true,
+      },
+    ],
   },
 ];
 
@@ -22,33 +48,48 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <a href="#top" className="inline-flex" aria-label="VYRO home">
+            <Link href="/#top" className="inline-flex" aria-label="VYRO home">
               <Logo className="h-14 w-14" />
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               The plain tee, made properly.
             </p>
             <div className="mt-5 flex gap-3">
               <a
-                href="#"
+                href="mailto:hello@vyrostore.in"
                 aria-label="Email VYRO"
+                data-cursor-hover
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
-                href="#"
-                aria-label="VYRO community chat"
+                href="tel:+918459501931"
+                aria-label="Call VYRO"
+                data-cursor-hover
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                <Phone className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
-                href="#"
-                aria-label="VYRO blog"
+                href="https://www.instagram.com/vyrostore.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="VYRO on Instagram"
+                data-cursor-hover
                 className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                <Rss className="h-4 w-4" aria-hidden="true" />
+                <InstagramIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={whatsappLink("Hi VYRO, I'd like to place an order.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Order VYRO on WhatsApp"
+                data-cursor-hover
+                className="flex h-9 w-9 items-center justify-center border border-border text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -59,16 +100,31 @@ export function Footer() {
                 {col.title}
               </h3>
               <ul className="mt-4 space-y-3">
-                {col.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {col.links.map((link) =>
+                  link.external ? (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-cursor-hover
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        data-cursor-hover
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           ))}
@@ -77,12 +133,12 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">
           <p>&copy; {new Date().getFullYear()} VYRO. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/privacy" data-cursor-hover className="hover:text-foreground">
+            <Link href="/privacy" data-cursor-hover className="hover:text-foreground">
               Privacy
-            </a>
-            <a href="/terms" data-cursor-hover className="hover:text-foreground">
+            </Link>
+            <Link href="/terms" data-cursor-hover className="hover:text-foreground">
               Terms
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -20,19 +20,21 @@ export default function TermsPage() {
       <section>
         <h2>Orders and payment</h2>
         <p>
-          All orders are subject to acceptance and availability. We reserve
-          the right to refuse or cancel any order for reasons including
-          product availability, pricing errors, or suspected fraud. Prices
-          are listed in USD and do not include applicable taxes or duties
-          unless stated otherwise.
+          Orders are placed by messaging us directly on WhatsApp, where we
+          confirm size, fit, shade, and payment before shipping. All orders
+          are subject to acceptance and availability, and we reserve the
+          right to refuse or cancel any order for reasons including product
+          availability, pricing errors, or suspected fraud. Prices are
+          listed in Indian Rupees (INR) and are inclusive of applicable
+          taxes unless stated otherwise.
         </p>
       </section>
 
       <section>
         <h2>Shipping</h2>
         <p>
-          Estimated delivery times are provided at checkout and are not
-          guaranteed. Risk of loss and title for items purchased pass to you
+          Estimated delivery times are provided when you place your order
+          and are not guaranteed. Risk of loss and title for items purchased pass to you
           upon delivery to the shipping carrier.
         </p>
       </section>
@@ -40,9 +42,9 @@ export default function TermsPage() {
       <section>
         <h2>Returns and exchanges</h2>
         <p>
-          We offer free size exchanges and accept returns within 60 days of
-          delivery for a full refund, provided items are unworn, unwashed,
-          and in their original condition with tags attached.
+          We accept returns within 20 days of delivery for a full refund,
+          provided items are unworn, unwashed, and in their original
+          condition with tags attached.
         </p>
       </section>
 
@@ -71,7 +73,7 @@ export default function TermsPage() {
           <li>
             If 10 business days have passed since your refund was approved
             and you haven&apos;t seen it posted, contact your bank first,
-            then reach out to us at hello@vyro.example.
+            then reach out to us at hello@vyrostore.in.
           </li>
         </ul>
       </section>
@@ -110,9 +112,10 @@ export default function TermsPage() {
       <section>
         <h2>Governing law</h2>
         <p>
-          These Terms are governed by the laws of the jurisdiction in which
-          VYRO is registered, without regard to its conflict of law
-          principles.
+          These Terms are governed by the laws of India, without regard to
+          its conflict of law principles. Any disputes arising from these
+          Terms are subject to the exclusive jurisdiction of the courts of
+          India.
         </p>
       </section>
 
@@ -128,7 +131,7 @@ export default function TermsPage() {
       <section>
         <h2>Contact us</h2>
         <p>
-          Questions about these Terms? Reach us at hello@vyro.example.
+          Questions about these Terms? Reach us at hello@vyrostore.in.
         </p>
       </section>
     </LegalLayout>

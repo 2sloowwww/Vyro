@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./logo";
@@ -18,9 +19,9 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-6">
-        <a href="/#top" className="flex items-center" aria-label="VYRO home">
+        <Link href="/#top" className="flex items-center" aria-label="VYRO home">
           <Logo className="h-11 w-11" />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
           {links.map((link) => (
@@ -28,16 +29,17 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               data-cursor-hover
-              className="text-sm font-semibold uppercase tracking-wide text-foreground/70 transition-colors hover:text-foreground"
+              className="group relative text-sm font-semibold uppercase tracking-wide text-foreground/70 transition-colors hover:text-foreground"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
           <Button
-            render={<a href="/#pricing" />}
+            render={<Link href="/#pricing" />}
             nativeButton={false}
             className="rounded-none bg-primary px-6 text-sm font-bold uppercase tracking-wide text-primary-foreground hover:bg-primary/85"
           >
@@ -69,7 +71,7 @@ export function Navbar() {
             </a>
           ))}
           <Button
-            render={<a href="/#pricing" />}
+            render={<Link href="/#pricing" />}
             nativeButton={false}
             className="mt-2 w-full rounded-none bg-primary text-sm font-bold uppercase tracking-wide text-primary-foreground hover:bg-primary/85"
           >

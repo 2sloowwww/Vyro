@@ -1,10 +1,12 @@
-import { Feather, Droplet, Ruler, Recycle } from "lucide-react";
+import { Feather, Droplet, Ruler, Recycle, Shirt, Leaf } from "lucide-react";
 import { Reveal, RevealGroup } from "./reveal";
 
 const features = [
-  { icon: Feather, title: "240gsm heavyweight cotton" },
-  { icon: Droplet, title: "Garment-dyed for lasting color" },
+  { icon: Feather, title: "240gsm heavyweight, premium yarn cotton" },
+  { icon: Droplet, title: "Fabric dyed before stitching, for deep, lasting color" },
+  { icon: Shirt, title: "French terry interior for a soft, premium feel" },
   { icon: Ruler, title: "A fit that actually fits" },
+  { icon: Leaf, title: "Eco-friendly packaging, near-zero plastic" },
   { icon: Recycle, title: "Responsibly made" },
 ];
 
@@ -19,10 +21,10 @@ export function Features() {
         {features.map((feature) => (
           <Reveal
             key={feature.title}
-            className="flex items-center gap-4 bg-background p-6"
+            className="group flex items-center gap-4 bg-background p-6 transition-colors hover:bg-secondary"
           >
             <feature.icon
-              className="h-6 w-6 shrink-0 text-accent"
+              className="h-6 w-6 shrink-0 text-accent transition-transform duration-300 group-hover:scale-110"
               strokeWidth={1.75}
               aria-hidden="true"
             />

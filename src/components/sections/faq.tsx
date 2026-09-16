@@ -4,12 +4,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { whatsappLink } from "@/lib/whatsapp";
 
 const faqs = [
   {
-    question: "Will the color fade after a few washes?",
+    question: "How do I place an order?",
     answer:
-      "No — because VYRO is garment-dyed after the tee is sewn, the color runs deeper into the fibers than a standard pre-dyed shirt. Wash cold and it'll hold up for 50+ washes.",
+      "Message us on WhatsApp with the fit, shade, and size you want and we'll confirm availability and payment over chat — just tap \"Order on WhatsApp\" on any product.",
+  },
+  {
+    question: "Will the color fade?",
+    answer:
+      "VYRO fabric is dyed before it's cut and sewn, so the color is locked into the yarn itself rather than applied afterward — giving deeper, more even color that holds up better over time than a standard printed or after-dyed tee.",
+  },
+  {
+    question: "What's the fabric like?",
+    answer:
+      "240gsm heavyweight cotton, knitted from premium yarn with a soft French terry interior — so it feels substantial without losing softness against the skin.",
   },
   {
     question: "How does the fit run?",
@@ -17,14 +28,19 @@ const faqs = [
       "True to size with a tapered, modern cut. If you're between sizes or prefer a boxier look, we recommend sizing up.",
   },
   {
-    question: "What's the fabric weight?",
+    question: "How do I wash and care for it?",
     answer:
-      "240gsm combed cotton — noticeably heavier than a typical fast-fashion tee, so it drapes better and doesn't go sheer.",
+      "Machine wash cold, inside out, with like colors. Avoid bleach. Tumble dry low or hang dry. If ironing, do it inside out on low heat.",
+  },
+  {
+    question: "Is the packaging eco-friendly?",
+    answer:
+      "Yes — VYRO uses close to zero plastic across production and delivery, so what arrives at your door is as clean as the tee inside it.",
   },
   {
     question: "What's the return policy?",
     answer:
-      "Free size exchanges and a no-questions-asked 60-day return window on every order.",
+      "A no-questions-asked 20-day return window on every order.",
   },
 ];
 
@@ -36,7 +52,26 @@ export function FAQ() {
           Questions? Answered.
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Still curious about something? Reach out at hello@vyro.example.
+          Still curious about something? Reach out at hello@vyrostore.in,
+          call{" "}
+          <a
+            href="tel:+918459501931"
+            data-cursor-hover
+            className="whitespace-nowrap text-foreground underline underline-offset-2"
+          >
+            +91 84595 01931
+          </a>
+          , or{" "}
+          <a
+            href={whatsappLink("Hi VYRO, I have a question.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor-hover
+            className="text-foreground underline underline-offset-2"
+          >
+            message us on WhatsApp
+          </a>
+          .
         </p>
       </div>
 

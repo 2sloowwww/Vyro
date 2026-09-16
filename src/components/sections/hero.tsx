@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
+import { maxDiscountPercent } from "@/lib/products";
 
 const slides = [
   { src: "/images/akshay-black-3.jpg", alt: "VYRO tee in Black" },
@@ -50,7 +51,17 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/10" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-6 pb-16">
-        <h1 className="max-w-2xl text-4xl font-black uppercase leading-[0.95] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <div className="inline-flex w-fit items-center gap-3 bg-accent px-5 py-2.5 text-accent-foreground">
+          <span className="text-xs font-bold uppercase tracking-widest">
+            Launch sale
+          </span>
+          <span className="h-4 w-px bg-accent-foreground/40" aria-hidden="true" />
+          <span className="font-heading text-lg font-black uppercase sm:text-xl">
+            Up to {maxDiscountPercent}% off
+          </span>
+        </div>
+
+        <h1 className="mt-4 max-w-2xl text-4xl font-black uppercase leading-[0.95] text-white sm:text-5xl md:text-6xl lg:text-7xl">
           The plain tee, <span className="text-highlight">perfected</span>
         </h1>
 
@@ -69,7 +80,7 @@ export function Hero() {
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} className="h-4 w-4 fill-accent text-accent" />
             ))}
-            <span className="text-sm font-semibold text-white/80">4.9</span>
+            <span className="text-sm font-semibold text-white/80">4.6</span>
           </div>
         </div>
 

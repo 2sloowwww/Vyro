@@ -1,9 +1,13 @@
+import { maxDiscountPercent } from "@/lib/products";
+
 const items = [
+  `LAUNCH SALE — UP TO ${maxDiscountPercent}% OFF`,
   "240GSM HEAVYWEIGHT COTTON",
-  "GARMENT-DYED",
-  "MADE TO LAST",
-  "FREE SHIPPING OVER $75",
-  "60-DAY RETURNS",
+  "DYED BEFORE STITCHING",
+  "FRENCH TERRY FEEL",
+  "ZERO PLASTIC PACKAGING",
+  "FREE SHIPPING OVER ₹999",
+  "20-DAY RETURNS",
 ];
 
 export function Marquee() {

@@ -51,20 +51,23 @@ export default function PrivacyPage() {
       <section>
         <h2>Sharing your information</h2>
         <p>
-          We share information with service providers who help us operate
-          our business — payment processors, shipping carriers, and
-          analytics providers — solely to the extent necessary to provide
-          their services. We do not sell your personal information.
+          Orders are placed and confirmed over WhatsApp, so information you
+          share with us there is also subject to WhatsApp&apos;s own privacy
+          policy (WhatsApp is operated by Meta). We share information with
+          other service providers who help us operate our business —
+          shipping carriers and analytics providers — solely to the extent
+          necessary to provide their services. We do not sell your personal
+          information.
         </p>
       </section>
 
       <section>
         <h2>Cookies</h2>
         <p>
-          We use cookies to keep track of items in your cart, understand how
-          you interact with our site, and improve your browsing experience.
-          You can disable cookies through your browser settings, though some
-          parts of the site may not function properly as a result.
+          We use cookies to understand how you interact with our site and to
+          improve your browsing experience. You can disable cookies through
+          your browser settings, though some parts of the site may not
+          function properly as a result.
         </p>
       </section>
 
@@ -74,7 +77,7 @@ export default function PrivacyPage() {
           Depending on where you live, you may have the right to access,
           correct, delete, or export the personal information we hold about
           you. To exercise these rights, contact us at
-          hello@vyro.example.
+          hello@vyrostore.in.
         </p>
       </section>
 
@@ -99,7 +102,7 @@ export default function PrivacyPage() {
       <section>
         <h2>Contact us</h2>
         <p>
-          Questions about this policy? Reach us at hello@vyro.example.
+          Questions about this policy? Reach us at hello@vyrostore.in.
         </p>
       </section>
     </LegalLayout>
