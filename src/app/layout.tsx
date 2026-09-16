@@ -15,7 +15,7 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://vyrostore.in";
+const siteUrl = "https://www.vyrostore.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

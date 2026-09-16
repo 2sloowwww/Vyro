@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://vyrostore.in/sitemap.xml",
+    sitemap: "https://www.vyrostore.in/sitemap.xml",
   };
 }
