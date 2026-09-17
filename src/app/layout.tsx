@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { Archivo, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/sections/custom-cursor";
 
@@ -15,6 +15,12 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-wordmark",
+  subsets: ["latin"],
+  weight: ["700"],
+});
+
 const siteUrl = "https://www.vyrostore.in";
 
 export const metadata: Metadata = {
@@ -24,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | VYRO",
   },
   description:
-    "VYRO makes premium 240gsm heavyweight cotton tees, fabric-dyed before stitching for deep, lasting color. Regular Fit in Black and Oversize Fit in Lavender. Free shipping over ₹999, 20-day returns.",
+    "VYRO makes premium 240gsm heavyweight cotton tees, fabric-dyed before stitching for deep, lasting color. Regular Fit in Black and Oversize Fit in Lavender. Free shipping and COD over ₹999, 20-day returns.",
   keywords: [
     "VYRO",
     "VYRO store",
@@ -132,7 +138,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en-IN"
-      className={`${archivo.variable} ${inter.variable} h-full antialiased`}
+      className={`${archivo.variable} ${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script

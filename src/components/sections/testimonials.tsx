@@ -4,17 +4,17 @@ import { Reveal, RevealGroup } from "./reveal";
 const testimonials = [
   {
     quote: "Bought a dozen 'perfect' tees that faded fast. This one hasn't.",
-    name: "Priya M.",
+    name: "Akshay C.",
     detail: "Regular Fit, Black",
   },
   {
     quote: "Doesn't feel like a ₹599 shirt, and it doesn't look like one either.",
-    name: "Jordan T.",
+    name: "Saurabh J.",
     detail: "Oversize Fit, Lavender",
   },
   {
     quote: "Fit perfectly on the first try — no sizing gamble.",
-    name: "Alicia R.",
+    name: "Arti D.",
     detail: "Regular Fit, Black",
   },
 ];

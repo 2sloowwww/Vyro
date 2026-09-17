@@ -48,14 +48,15 @@ export function Hero() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,transparent_55%,rgba(0,0,0,0.25)_100%)]" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-6 pb-16">
-        <div className="inline-flex w-fit items-center gap-3 bg-accent px-5 py-2.5 text-accent-foreground">
-          <span className="text-xs font-bold uppercase tracking-widest">
+        <div className="inline-flex w-fit items-center gap-3 border border-white/25 bg-black/30 px-5 py-2.5 text-white backdrop-blur-md">
+          <span className="text-xs font-bold uppercase tracking-widest text-accent-foreground">
             Launch sale
           </span>
-          <span className="h-4 w-px bg-accent-foreground/40" aria-hidden="true" />
+          <span className="h-4 w-px bg-white/30" aria-hidden="true" />
           <span className="font-heading text-lg font-black uppercase sm:text-xl">
             Up to {maxDiscountPercent}% off
           </span>
@@ -64,6 +65,10 @@ export function Hero() {
         <h1 className="mt-4 max-w-2xl text-4xl font-black uppercase leading-[0.95] text-white sm:text-5xl md:text-6xl lg:text-7xl">
           The plain tee, <span className="text-highlight">perfected</span>
         </h1>
+        <p className="mt-4 max-w-md text-white/80">
+          Built to wear daily and outlast fast fashion — sustainably made,
+          wash after wash.
+        </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-6">
           <Button

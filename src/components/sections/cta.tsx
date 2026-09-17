@@ -8,6 +8,10 @@ export function CTA() {
         <h2 className="mx-auto max-w-xl text-3xl font-black uppercase sm:text-4xl">
           Ready to retire your old plain tee?
         </h2>
+        <p className="mx-auto mt-4 max-w-md text-primary-foreground/70">
+          Built to be worn daily and wash after wash, with packaging that
+          skips the plastic — one tee that earns its place in rotation.
+        </p>
         <Button
           render={<a href="#pricing" />}
           nativeButton={false}

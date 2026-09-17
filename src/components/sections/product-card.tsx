@@ -12,7 +12,7 @@ export function ProductCard({ product }: { product: Product }) {
         alt={`VYRO ${product.name} tee in ${product.shade}`}
       />
 
-      <div className="mt-5">
+      <div className="relative -mt-4 mx-4 border border-white/50 bg-white/55 p-5 backdrop-blur-xl shadow-[0_8px_32px_-8px_rgba(15,92,102,0.25)] sm:mx-6 sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <Badge
             className="rounded-none bg-primary px-3 py-1 text-primary-foreground"

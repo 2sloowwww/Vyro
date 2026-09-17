@@ -21,12 +21,13 @@ export default function TermsPage() {
         <h2>Orders and payment</h2>
         <p>
           Orders are placed by messaging us directly on WhatsApp, where we
-          confirm size, fit, shade, and payment before shipping. All orders
-          are subject to acceptance and availability, and we reserve the
-          right to refuse or cancel any order for reasons including product
-          availability, pricing errors, or suspected fraud. Prices are
-          listed in Indian Rupees (INR) and are inclusive of applicable
-          taxes unless stated otherwise.
+          confirm size, fit, shade, and payment before shipping. Cash on
+          Delivery (COD) is available on orders over ₹999; orders below that
+          amount are prepaid. All orders are subject to acceptance and
+          availability, and we reserve the right to refuse or cancel any
+          order for reasons including product availability, pricing errors,
+          or suspected fraud. Prices are listed in Indian Rupees (INR) and
+          are inclusive of applicable taxes unless stated otherwise.
         </p>
       </section>
 

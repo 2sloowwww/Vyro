@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { Logo } from "./logo";
 
 const links = [
   { href: "/#features", label: "Fabric" },
@@ -17,10 +16,14 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-6">
-        <Link href="/#top" className="flex items-center" aria-label="VYRO home">
-          <Logo className="h-11 w-11" />
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/60 backdrop-blur-xl">
+      <div className="relative mx-auto flex h-18 max-w-6xl items-center justify-between px-6">
+        <Link
+          href="/#top"
+          aria-label="VYRO home"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-wordmark text-xl font-bold uppercase tracking-wide text-accent"
+        >
+          VYRO
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">

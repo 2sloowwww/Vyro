@@ -7,7 +7,7 @@ const features = [
   { icon: Shirt, title: "French terry interior for a soft, premium feel" },
   { icon: Ruler, title: "A fit that actually fits" },
   { icon: Leaf, title: "Eco-friendly packaging, near-zero plastic" },
-  { icon: Recycle, title: "Responsibly made" },
+  { icon: Recycle, title: "Responsibly made, built to outlast fast fashion" },
 ];
 
 export function Features() {

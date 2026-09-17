@@ -4,7 +4,7 @@ const stats = [
   { value: "240gsm", label: "Heavyweight cotton" },
   { value: "Zero", label: "Plastic packaging" },
   { value: "20-day", label: "Free returns" },
-  { value: "₹999+", label: "Free shipping" },
+  { value: "₹999+", label: "Free shipping & COD" },
 ];
 
 export function Stats() {

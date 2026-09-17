@@ -13,6 +13,11 @@ const faqs = [
       "Message us on WhatsApp with the fit, shade, and size you want and we'll confirm availability and payment over chat — just tap \"Order on WhatsApp\" on any product.",
   },
   {
+    question: "Is Cash on Delivery (COD) available?",
+    answer:
+      "Yes — COD is available on orders over ₹999, along with free shipping at that same threshold. Below ₹999, we'll share prepaid payment options over WhatsApp.",
+  },
+  {
     question: "Will the color fade?",
     answer:
       "VYRO fabric is dyed before it's cut and sewn, so the color is locked into the yarn itself rather than applied afterward — giving deeper, more even color that holds up better over time than a standard printed or after-dyed tee.",
@@ -33,9 +38,9 @@ const faqs = [
       "Machine wash cold, inside out, with like colors. Avoid bleach. Tumble dry low or hang dry. If ironing, do it inside out on low heat.",
   },
   {
-    question: "Is the packaging eco-friendly?",
+    question: "Is VYRO sustainable?",
     answer:
-      "Yes — VYRO uses close to zero plastic across production and delivery, so what arrives at your door is as clean as the tee inside it.",
+      "We keep it practical: close to zero plastic across production and delivery, and a heavyweight fabric built to hold up wash after wash so it stays in your daily rotation instead of the landfill after a season.",
   },
   {
     question: "What's the return policy?",
